@@ -1,0 +1,607 @@
+body {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.99) 0%, #e89059 100%);
+    background-size: 200% 200%; /* Set the background size for animation effects */
+    font-family: "Nunito", sans-serif;
+    font-weight: 700; /* bold */
+    animation: BackgroundFlow 2s ease infinite alternate; /* Modify animation settings */
+}
+
+@keyframes BackgroundFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+
+
+.blurb h2 {
+    color: #EA1C2C;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.blurb h2:hover {
+    transform: scale(1.1) rotate(-5deg);
+    color: #ffcccc;
+}
+.blurb p {
+    color: rgba(0, 0, 0, 0.58);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.blurb p.animate {
+    opacity: 1;
+}
+
+.slideTitle {
+    font-size: larger;
+}
+
+
+
+
+
+
+
+.img-fluid {
+    transition: transform 0.7s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(234, 101, 109, 0.8);
+}
+
+.lead {
+    color: rgba(0, 0, 0, 0.58);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    transition: color 1s ease-in-out, transform 1s ease-in-out, text-shadow 1s ease-in-out; /* Use a slower transition */
+}
+
+.lead:hover {
+    color: #EA1C2C; /* Change color on mouseover */
+    transform: translateY(-5px); /* Move upward slightly */
+    text-shadow: 0 0 8px rgba(234, 101, 109, 0.8); /* Add text shadow effect */
+}
+
+
+
+.lead.animate {
+    opacity: 1; /* Animation triggers and becomes visible */
+}
+
+
+
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 0.3s;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+/*
+.manhattan-page #mainNavbar {
+     font-size: 1.5rem;
+     font-weight: 200;
+     background-color: rgba(0, 0, 0, 0.69);
+
+}*/
+
+/* Increase the left and right margins of each navigation link */
+.navbar-nav .nav-item .nav-link {
+    margin-left: 15px; /* left margin */
+    margin-right: 15px; /* right margin */
+}
+#mainNavbar .navbar-brand, #mainNavbar .nav-link {
+    line-height: 2;
+    color: #ffffff; /* Initial font color */
+    background-color: transparent; /* Initial background color */
+    padding: 5px 10px; /* initial padding */
+    border-radius: 10px; /* rounded corners */
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.5s ease; /* Smooth transition effect */
+}
+
+#mainNavbar .navbar-brand:hover, #mainNavbar .nav-link:hover {
+    color: #ffffff; /* The font color is white to adapt to the dark background */
+    background-color: rgba(234, 101, 109, 0.8); /* Dark translucent background */
+    box-shadow: 0 0 15px 5px rgba(220, 84, 96, 0.7); /* More obvious fluorescent shadow effect */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+#mainNavbar .nav-item{
+    font-family: 'Cinzel', serif; /* Use Cinzel font */
+    font-weight: bolder;
+}
+
+
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif; /* Use Cinzel font */
+    font-weight: bolder;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.7);
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+.carousel, .carousel-inner, .carousel-item, .carousel-item img {
+    height: 100vh; /* Viewport height, so that the height of the carousel adapts to the screen */
+    width: 100vw; /* Viewport width, so that the width of the carousel adapts to the screen */
+    object-fit: cover; /* Maintain the aspect ratio of the image, and the excess part will be cropped */
+}
+
+.carousel-item {
+    position: relative; /* Absolute positioning for positioning .caption */
+}
+/* Center the text in the carousel vertically and horizontally on the entire image */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px; /* distance between text and border */
+    min-width: 60%; /* Set the minimum width to 60% of the width of the parent element */
+    text-align: center; /* Center text */
+}
+
+/* Basic style */
+.carousel-caption h5, .carousel-caption p {
+    color: #fff; /* Modify title and paragraph text colors */
+    font-weight: bold; /* bold font */
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out; /* smooth transition effect */
+}
+
+/* hover effect */
+.carousel-caption h5:hover, .carousel-caption p:hover {
+    color: #fff; /* Keep text color white when hovering */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6); /* Enhance the text shadow effect when hovering, adjust to white */
+    transform: scale(1.05); /* Slightly enlarge text */
+}
+
+
+/* Title specific style */
+.carousel-caption h5 {
+    font-size: 3.3rem; /* Increase the font size of the title */
+    font-family: 'Cinzel', serif; /* Use Cinzel font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+/* Paragraph specific styles */
+.carousel-caption p {
+    font-size: 1.2rem; /* Increase the font size of paragraph text */
+    font-family: 'Montserrat', serif; /* Corrected to Montserrat font */
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+
+.lazy-load {
+    opacity: 0; /* Invisible at first */
+    transform: scale(0.95); /* slightly shrink */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* smooth transition effect */
+}
+
+.heading-hover {
+    transition: transform 0.5s ease, color 0.5s ease, text-shadow 0.5s ease;
+    cursor: pointer;
+    display: inline-block; /* Allow transformation effects */
+    perspective: 500px; /* 3D perspective effect */
+}
+
+.heading-hover:hover {
+    transform: scale(1.1) rotateX(20deg); /* Zoom in and tilt slightly towards the user */
+    color: #ffffff; /* Change the font color to white */
+    text-shadow: 0 0 10px #EA1C2C, 0 0 20px #EA1C2C, 0 0 30px #EA1C2C, 0 0 40px #EA1C2C; /* glow effect */
+}
+
+
+
+
+/* Carousel image outer container */
+#manhattanCarousel {
+    margin-bottom: 20px; /* Bottom spacing */
+    overflow: hidden; /* Hide the excess part */
+}
+
+
+/* Adjust the internal elements of the carousel */
+#manhattanCarousel .carousel-inner,
+#manhattanCarousel .carousel-item {
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+}
+
+
+/* Adjust indicator position */
+#manhattanCarousel .carousel-indicators {
+    margin-bottom: -20px; /* Adjust the position of the indicator upward */
+}
+
+/* Image style adjustment, remove aspect-ratio control */
+.manhattan-page .carousel-inner img {
+    width: 100%; /* Make the image width adaptive to the container */
+    object-fit: cover; /* Cover the entire container and may crop part of the image */
+}
+
+/* Image style adjustment */
+#manhattanCarousel .carousel-inner img {
+    width: 100%; /* Make the image width adaptive to the container */
+    object-fit: cover; /* Cover the entire container and may crop part of the image */
+}
+/* Image-specific style adjustments */
+/* Dynamically adjust the height using a certain proportion of the viewport width */
+#manhattanCarousel {
+    height: 30vw; /* Adjust the height of the carousel based on the proportion of the viewport width */
+}
+
+/* Make sure the height of .carousel-item matches .carousel */
+#manhattanCarousel .carousel-item {
+    height: 25vw; /* Keep the same height as the carousel container */
+}
+
+/* Card style adjustment */
+.card {
+    margin-bottom: 20px; /* Provide sufficient spacing */
+}
+
+/* jumbotron style adjustment, providing top and bottom margins */
+.jumbotron {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background increases readability */
+}
+
+
+.nav-link, .navbar-brand {
+    color: #EA1C2C !important; /* Enhance readability */
+}
+
+.navbar-toggler {
+    border-color: #EA1C2C;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 20px;
+    }
+}
+.card {
+    background: linear-gradient(135deg, #ff3815 0%, #ffcf46 100%);
+
+    border: none; /* Remove borders for a cleaner look */
+    color: #ffffff; /* Set the text color to white to ensure readability on dark backgrounds */
+}
+
+.card .btn-primary {
+    background-color: #ffffff; /* Set the background color of the button to contrast with the card background */
+    color: #007bff; /* Button text color to match the starting color of the card */
+    border: 1px solid #ffffff; /* Add a white border to the button to enhance the visual effect */
+}
+
+.card .btn-primary:hover {
+    background-color: #6610f2; /* The background color when the button is hovered, consistent with the end color of the card gradient */
+    color: #ffffff; /* Text color when the button is hovered */
+}
+
+
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transformation and shadow effects */
+    cursor: pointer; /* prompt the user to click */
+}
+
+.card:hover {
+    transform: scale(1.05); /* slightly enlarge */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Add shadow */
+}
+
+/* Card image hover effect */
+.card-img-top {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease; /* Smooth magnification and transparency changes */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Image enlargement */
+    opacity: 0.9; /* slightly reduce transparency */
+}
+
+/* Card button hover effect */
+.card .btn-primary {
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth color transformation */
+}
+
+.card .btn-primary:hover {
+    background-color: #EA1C2C; /* Change button background color */
+    border-color: #EA1C2C; /* Change button border color */
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #009FFF, #ec2F4B); /* Add gradient background */
+    color: #ffffff; /* Adjust text color to fit the background */
+    transition: background-color 0.5s ease-in-out; /* Smooth background color transformation */
+}
+
+.jumbotron h1.display-4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
+    animation: fadeInDown 2s; /* text appears animation */
+}
+
+.jumbotron p.lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow effect */
+    animation: fadeInUp 2s; /* text appears animation */
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.author-info {
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* bold font */
+    color: #ffffff; /* font color */
+    padding: 10px; /* padding */
+    border-radius: 5px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Shadow effect */
+    background-size: 200% 200%; /* Background size, in order to create gradient animation effects */
+    background-image: linear-gradient(45deg, #007bff, #009FFF, #ec2F4B, #007bff); /* Define multi-color gradient */
+    animation: flow 3s ease infinite; /* Apply animation */
+}
+
+.author-info:hover {
+    transform: scale(1.05); /* Slightly zoom in when hovering the mouse */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5); /* Enhance shadow when mouseover */
+    cursor: pointer;
+}
+
+/* Define streamer animation */
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+#authorNavbar {
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+/*
+.manhattan-page #mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 200;
+    background-color: rgba(0, 0, 0, 0.69);
+
+}*/
+
+/* Increase the left and right margins of each navigation link */
+.navbar-nav .nav-item .nav-link {
+    margin-left: 15px; /* left margin */
+    margin-right: 15px; /* right margin */
+}
+
+
+
+
+
+
+#authorNavbar .navbar-brand, #authorNavbar .nav-link {
+    line-height: 2;
+    color: #ffffff; /* Initial font color */
+    background-color: transparent; /* Initial background color */
+    padding: 5px 10px; /* initial padding */
+    border-radius: 10px; /* rounded corners */
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.5s ease; /* Smooth transition effect */
+}
+
+#authorNavbar .navbar-brand:hover, #authorNavbar .nav-link:hover {
+    color: #ffffff; /* The font color is white to adapt to the dark background */
+    background-color: rgba(234, 101, 109, 0.8); /* Dark translucent background */
+    box-shadow: 0 0 15px 5px rgba(220, 84, 96, 0.7); /* More obvious fluorescent shadow effect */
+    transform: scale(1.05); /* slightly enlarge */
+}
+
+
+
+
+#authorNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+}
+
+
+.lazy-fade {
+    opacity: 0;
+    transition: opacity 2s ease-out; /* The display speed slows down and the transition time increases to 2 seconds */
+}
+
+
+
+
+/* Modal box content style */
+.stylish-modal-content {
+    background: #121212; /* dark background */
+    border-radius: 15px;
+    color: #fff; /* light text */
+}
+
+/* Modal box header style */
+.stylish-modal-header {
+    border-bottom: 1px solid #333; /* More subtle borders */
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+}
+
+/* Close button style */
+.stylish-close {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Modal box body style */
+.stylish-modal-body {
+    display: flex;
+    align-items: center;
+}
+
+/* Picture style */
+.flex-img-large {
+    max-width: 60%; /* Make the image larger */
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add some shadow effects */
+}
+
+/* Text content style */
+.stylish-text-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Modal box bottom button style */
+.stylish-modal-footer {
+    border-top: 1px solid #333; /* More subtle borders */
+    background: #121212;
+}
+
+.stylish-btn {
+    background-color: #2575fc;
+    border: none;
+}
+
+.stylish-btn:hover {
+    background-color: #6a11cb;
+}
+
+
+.lead{
+    background: rgba(255, 255, 255, 0.06); /* translucent white background */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* white translucent border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* slight shadow effect */
+    padding: 15px; /* distance between text and border */
+    border-radius: 8px; /* border rounded corners */
+    color: #000; /* Text color, which can be adjusted according to the background to ensure readability */
+    margin-bottom: 20px; /* distance from other elements */
+}
+
+.author-banner {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.author-content {
+    padding: 40px 0;
+}
+.author-contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Link hover effect */
+a:hover {
+    color: #ff4081; /* 链接悬停时的颜色 */
+}
+
+/* Banner title and paragraph hover effect */
+.author-banner h1:hover, .author-banner p:hover {
+    color: #007bff; /* Change hover color to bright blue */
+    text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #007bff, 0 0 14px #007bff; /* Glowing effect */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Content headings and paragraphs hover effect */
+.author-content h2:hover, .author-content p:hover {
+    color: #eeb868; /* Change hover color to gold */
+    text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #eeb868, 0 0 14px #eeb868; /* Glowing effect */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+
+
+
+
+
+

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <title>Attractions</title>
+</head>
+<body class="manhattan-page">
+<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+    <a href="index.html" class="navbar-brand">Chris's Studio</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="page1.html" class="nav-link">ATTRACTION</a>
+            </li>
+            <li class="nav-item">
+                <a href="author.html" class="nav-link">AUTHOR</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="manhattanCarousel" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="imgs/p11.jpg" alt="First slide">
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="imgs/info1.jpg" alt="Card image cap"
+                     data-toggle="modal" data-target="#Modal1">
+                <div class="card-body">
+                    <h5 class="card-title">9/11 Memorial and Museum</h5>
+                    <p class="card-text">Visit this somber memorial and take in the view from the Freedom Tower.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">know more</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copy the above div.col-md-4 to add more cards -->
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="imgs/info2.jpg" alt="Card image cap"
+                     data-toggle="modal" data-target="#Modal2">
+                <div class="card-body">
+                    <h5 class="card-title">Metropolitan Museum of Art</h5>
+                    <p class="card-text">The Met is one of the foremost collections of fine art in the world.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal2">know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="imgs/info3.jpg" alt="Card image cap"
+                     data-toggle="modal" data-target="#Modal3">
+                <div class="card-body">
+                    <h5 class="card-title">Meander through Central Park</h5>
+                    <p class="card-text">It’s free, there are lots of little paths to walk, and, since it spans over 40 blocks.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal3">know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="imgs/info4.jpg" alt="Card image cap"
+                     data-toggle="modal" data-target="#Modal4">
+                <div class="card-body">
+                    <h5 class="card-title">Brooklyn Bridge</h5>
+                    <p class="card-text">Walk across the Brooklyn Bridge to get a picturesque view of the New York skyline and harbor.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal4">know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="imgs/info5.jpg" alt="Card image cap"
+                     data-toggle="modal" data-target="#Modal5">
+                <div class="card-body">
+                    <h5 class="card-title">Wander Times Square</h5>
+                    <p class="card-text">No matter when you go to Times Square, it will be packed with people. Try to come at night when it’s all lit up.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal5">know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="imgs/info6.jpg" alt="Card image cap"
+                     data-toggle="modal" data-target="#Modal6">
+                <div class="card-body">
+                    <h5 class="card-title">Wall Street</h5>
+                    <p class="card-text">Take a photo with the famous charging bull statue and see where all those bankers destroyed the economy.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Modal6">know more</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Welcome to my NY website</h1>
+        <p class="lead">This is a website that helps you know more about New York</p>
+        <p class="author-info">Click here to see author Chris's information</p> <!-- Newly added information about the author -->
+    </div>
+</div>
+
+
+
+
+
+<!-- Modal window -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Use the modal-lg class to make the modal box larger -->
+        <div class="modal-content stylish-modal-content">
+            <div class="modal-header stylish-modal-header">
+                <h5 class="modal-title">9/11 Memorial and Museum</h5>
+                <button type="button" class="close stylish-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex stylish-modal-body">
+                <img src="imgs/info1.jpg" alt="PICTURE" class="img-fluid flex-img-large">
+                <div class="text-content stylish-text-content">
+                    <p>The 9/11 Memorial and Museum in New York City commemorate the September 11, 2001, terrorist attacks and the 1993 World Trade Center bombing. The memorial features twin reflecting pools set within the footprints of the Twin Towers, while the museum displays artifacts, narratives, and interactive exhibits, honoring the victims and examining the impact of the events.</p>
+                </div>
+            </div>
+            <div class="modal-footer stylish-modal-footer">
+                <button type="button" class="btn stylish-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Modal window -->
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Use the modal-lg class to make the modal box larger -->
+        <div class="modal-content stylish-modal-content">
+            <div class="modal-header stylish-modal-header">
+                <h5 class="modal-title">Metropolitan Museum of Art</h5>
+                <button type="button" class="close stylish-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex stylish-modal-body">
+                <img src="imgs/info2.jpg" alt="PICTURE" class="img-fluid flex-img-large">
+                <div class="text-content stylish-text-content">
+                    <p>The Metropolitan Museum of Art, located in New York City, is one of the world's largest and most prestigious art museums. It houses over two million works spanning 5,000 years of art from across the globe, including paintings, sculptures, textiles, and armor, offering a comprehensive overview of human creativity and cultural heritage.</p>
+                </div>
+            </div>
+            <div class="modal-footer stylish-modal-footer">
+                <button type="button" class="btn stylish-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal window -->
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Use the modal-lg class to make the modal box larger -->
+        <div class="modal-content stylish-modal-content">
+            <div class="modal-header stylish-modal-header">
+                <h5 class="modal-title">Central Park</h5>
+                <button type="button" class="close stylish-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex stylish-modal-body">
+                <img src="imgs/info3.jpg" alt="PICTURE" class="img-fluid flex-img-large">
+                <div class="text-content stylish-text-content">
+                    <p>Central Park, an expansive green oasis in the heart of New York City, covers 843 acres and offers a peaceful escape from urban life. It features meadows, lakes, forests, and walking paths, along with cultural attractions like the Central Park Zoo and Bethesda Terrace. It's a beloved recreational space for residents and visitors alike.</p>
+                </div>
+            </div>
+            <div class="modal-footer stylish-modal-footer">
+                <button type="button" class="btn stylish-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal window -->
+<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Use the modal-lg class to make the modal box larger -->
+        <div class="modal-content stylish-modal-content">
+            <div class="modal-header stylish-modal-header">
+                <h5 class="modal-title">Brooklyn Bridge</h5>
+                <button type="button" class="close stylish-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex stylish-modal-body">
+                <img src="imgs/info4.jpg" alt="PICTURE" class="img-fluid flex-img-large">
+                <div class="text-content stylish-text-content">
+                    <p>The Brooklyn Bridge, spanning the East River in New York City, is a historic engineering marvel completed in 1883. It connects Manhattan and Brooklyn and is renowned for its distinctive Gothic arches and suspension cables. The bridge is a symbol of innovation and resilience, offering pedestrians and cyclists spectacular skyline views.</p>
+                </div>
+            </div>
+            <div class="modal-footer stylish-modal-footer">
+                <button type="button" class="btn stylish-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal window -->
+<div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Use the modal-lg class to make the modal box larger -->
+        <div class="modal-content stylish-modal-content">
+            <div class="modal-header stylish-modal-header">
+                <h5 class="modal-title">Times Square</h5>
+                <button type="button" class="close stylish-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex stylish-modal-body">
+                <img src="imgs/info5.jpg" alt="PICTURE" class="img-fluid flex-img-large">
+                <div class="text-content stylish-text-content">
+                    <p>Times Square, situated in the heart of New York City, is a bustling commercial and entertainment hub known for its bright, neon-lit billboards, theaters, and crowded streets. It's a cultural landmark, famous for the annual New Year's Eve ball drop, attracting tourists worldwide for its vibrant energy and iconic status.</p>
+                </div>
+            </div>
+            <div class="modal-footer stylish-modal-footer">
+                <button type="button" class="btn stylish-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal window -->
+<div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Use the modal-lg class to make the modal box larger -->
+        <div class="modal-content stylish-modal-content">
+            <div class="modal-header stylish-modal-header">
+                <h5 class="modal-title">Wall Street</h5>
+                <button type="button" class="close stylish-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex stylish-modal-body">
+                <img src="imgs/info6.jpg" alt="PICTURE" class="img-fluid flex-img-large">
+                <div class="text-content stylish-text-content">
+                    <p>Wall Street, located in Lower Manhattan, New York City, is synonymous with the financial industry of the United States, housing major stock exchanges like the New York Stock Exchange (NYSE). It represents economic power and is a symbol of financial markets, investment banking, and corporate finance globally.</p>
+                </div>
+            </div>
+            <div class="modal-footer stylish-modal-footer">
+                <button type="button" class="btn stylish-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="lazyload.js"></script>
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+<script>
+    //Listen to click events
+    document.querySelector('.author-info').addEventListener('click', function() {
+        window.location.href = 'author.html'; //Specify the URL to jump to
+    });
+</script>
+
+
+</body>
+</html>
